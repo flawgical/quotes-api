@@ -1,4 +1,4 @@
-const Quote = require('../../models/cart');
+const Cart = require('../../models/cart');
 
 module.exports = {
   index,
