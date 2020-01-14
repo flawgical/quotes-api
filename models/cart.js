@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const quoteSchema = new Schema({
+const cartSchema = new Schema({
     quantity: {type: Number},
     author: {type: String},
     image: {type: String},
@@ -12,4 +12,4 @@ const quoteSchema = new Schema({
   timestamps: true
 });
 
-module.exports = mongoose.model('Quote', quoteSchema);
+module.exports = mongoose.model('Cart', cartSchema);
