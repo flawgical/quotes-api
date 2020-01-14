@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
-var quotesCtrl = require('../controllers/api/quotes');
+const express = require('express');
+const router = express.Router();
+const quotesCtrl = require('../controllers/api/quotes');
 
-/* GET /api/puppies */
+/* GET /api/quotes */
 router.get('/quotes', quotesCtrl.index);
 router.get('/quotes/:id', quotesCtrl.show);
 router.post('/quotes', quotesCtrl.create);
